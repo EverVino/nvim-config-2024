@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "projekt0n/github-nvim-theme" },
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
     {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
       dependencies = { 'nvim-lua/plenary.nvim' }
@@ -30,7 +32,7 @@ require("lazy").setup({
         end,
     },
     {
-        -- VIsualize buffers as tabs
+        -- Visualize buffers as tabs
         {"akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons"}, 
 
     },
