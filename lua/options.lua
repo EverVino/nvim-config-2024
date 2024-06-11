@@ -27,3 +27,7 @@ vim.opt.clipboard = "unnamedplus"
 -- Marcar la linea actual de codificación
 vim.opt.cursorline = true
 
+vim.opt.foldmethod = "indent"
+vim.opt.foldtext = ""
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 1
